@@ -7,10 +7,8 @@ The Scalable Notification Service is designed to handle high volumes of notifica
 ## Project Structure
 
 ```
-/cmd                     # Main applications for the project
 /config                  # Configuration files
 /internal                # Private application and library code
-/pkg                     # Library code that's ok to be used by external applications
 .env                     # Environment configuration
 .gitignore               # Git ignore rules
 go.mod                   # Go module file
@@ -21,10 +19,8 @@ README.md                # Project documentation
 
 ### Directory Details
 
-- **/cmd**: Contains the main applications for the project, including the entry point for running the service.
 - **/config**: Stores configuration files that are necessary for the application to run, including environment variables.
 - **/internal**: Contains private application and library code that should not be exposed outside of this project.
-- **/pkg**: Contains reusable library code that can be used by external applications, but is primarily intended for internal use.
 - **main.go**: The main entry point of the application, where the server and worker pools are initialized.
 
 ## Features Implemented
